@@ -179,12 +179,13 @@ body {
 }
 
 // Botón de corazón
+
 .botonInvitacion {
   position: relative;
   display: grid;
   place-items: center;
   flex-shrink: 0;
-  width: 10px;
+  width: 135px;
   padding: 0;
   margin-top: 28px;
   border: 0;
@@ -195,6 +196,7 @@ body {
   animation: latidoCorazon 1s ease-in-out infinite;
   filter: drop-shadow(0 0 12px #e2dee680);
 }
+
 
 .corazonInvitacion {
   display: block;
@@ -675,4 +677,31 @@ body {
 
 .botonUbicacion:hover {
   background-color: #ffffff30;
+}
+
+/* Transición de revelado con corazón */
+
+.imagenPrincipal.enTransicion {
+  position: relative;
+  z-index: 2;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.interiorInvitacion.preparandoTransicion {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  min-height: 100vh;
+  min-height: 100svh;
+  animation: none;
+  opacity: 1;
+  transform: none;
+}
+
+.interiorInvitacion.interiorVisible {
+  animation: none;
 }
